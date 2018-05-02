@@ -1,0 +1,206 @@
+/*
+
+File Name: style.less 
+Date: 03/11/18
+Programmer: Paige Dahl
+
+*/
+
+@import 'palette.less';
+
+/* ---------- MOBILE ---------- */
+
+@media only screen and (min-width: 300px) {
+/* ---------- Global ---------- */
+
+body {
+	background-color: @color5;
+	font-family: 'Antic', sans-serif;
+	font-size: 1em;
+}
+
+img {
+	max-width: 100%;
+	min-width: 300px;
+}
+
+
+/* ----- Header ----- */
+
+header {
+	padding-top: 15px;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 1.1em;
+	h1 {
+		text-align: center;
+		color: @color1;
+	}
+	h3 {
+		text-align: center;
+		color: @color1;
+	}
+	p {
+		text-align: center;
+		color: @color1;
+		
+	}
+	.navbar {
+		background-color: @color1;
+		.navbar-toggler {
+			color: transparent;
+			background-color: @color2;
+			border: none;
+		}
+		.nav-item {
+			a {
+				&:hover {
+					background-color: @color2;
+				}
+			}
+		}
+		.dropdown-menu {
+			background-color: @color2;
+			.dropdown-item {
+				text-align: center;
+			}
+			a {
+				&:hover {
+					background-color: @color4;
+					color: @color1;
+				}
+			}
+		}
+		ul {
+			li {
+				text-align: center;
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+
+/* ----- Section ----- */
+
+section {
+	padding-top: 20px;
+	h3 {
+		font-family: 'Carrois Gothic SC', sans-serif;
+	}
+	h4 {
+		margin-left: auto;
+		margin-right: auto;
+		font-family: 'Carrois Gothic SC', sans-serif;
+	}
+	.col-sm {
+		padding: 2px;
+		margin: 3px;
+		border-radius: 8px;
+	}
+	button {
+		margin-left: auto;
+		margin-right: auto;
+		background-color: @color1;
+		color: white;
+		box-shadow: 3px 3px 8px black;
+		font-family: 'Carrois Gothic SC', sans-serif;
+	}
+	ul {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.container-fluid {
+	border-bottom: 4px double @color1;
+	margin-top: 20px;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25px;
+}
+
+
+/* ----- Footer ----- */
+
+footer {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	background-color: @color1;
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 1.1em;
+	a {
+		color: white;
+		text-decoration: underline;
+		padding: 6px;
+		border-radius: 8px;
+		&:hover {
+			background-color: @color2;
+			color: white;
+		}
+	}
+	.copyright {
+		font-size: small;
+		border-top: 4px double white;
+		font-style: italic;
+		p {
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 15px;
+		}
+	}
+}
+
+}
+
+
+/* ----- TABLET ----- */
+
+@media only screen and (min-width: 768px) {
+		.container-fluid {
+		img {
+			min-width: 300px;
+		} 
+	}
+}
+
+/* ----- BIGGER TABLET ----- */
+
+@media only screen and (min-width: 936px) {
+		.container-fluid {
+		img {
+			min-width: 400px;
+			padding: 5px;
+		} 
+	}
+}
+
+/* ----- DESKTOP ----- */
+
+@media only screen and (min-width: 1236px) {
+		.container-fluid {
+		img {
+			min-width: 500px;
+			padding: 10px;
+		} 
+	}
+}
+
+/* ----- BIGGER DESKTOP ----- */
+
+@media only screen and (min-width: 1536px) {
+		.container-fluid {
+		img {
+			min-width: 200px;
+			padding: 15px;
+		} 
+	}
+}
+;
